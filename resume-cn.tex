@@ -12,83 +12,63 @@
 
 %% \setmainfont[]{SimSun}
 %% \setCJKfallbackfamilyfont{rm}{HAN NOM B}
-\setCJKmainfont[BoldFont=Sarasa Gothic SC,ItalicFont=KaiTi_GB2312]{Source Han Serif SC}
+\setCJKmainfont[BoldFont=Sarasa Gothic CL,ItalicFont=Sarasa Gothic CL]{Source Han Serif}
 %% \renewcommand{\thepage}{\Chinese{page}}
 
 \begin{document}
 \pagestyle{fancy}
 \fancyhf{}
 \renewcommand\headrulewidth{0pt}
-\cfoot{\thepage\ of \pageref{LastPage}}
+%% \cfoot{\thepage\ of \pageref{LastPage}}
 
-\name{张寅森}
+\name{邬树辉}
 
 \basicInfo{
-  \email{ice1000kotlin@foxmail.com} \textperiodcentered\ 
-  \phone{(+86) 180-8192-5082} \textperiodcentered\ 
-  \github[ice1000]{https://github.com/ice1000}
-  % \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}
+    \email{xipotatonium@outlook.com} \textperiodcentered\ 
+    \phone{(+86) 152-6781-1210} \textperiodcentered\ 
+    \github[XiPotatonium]{https://github.com/XiPotatonium}
 }
 
-\section{\faGraduationCap\ 教育经历}
-\datedsubsection{\textbf{宾夕法尼亚州州立大学}, 美国}{2018.8 -- 现在}
-  专业：计算机科学，预计毕业日期：2022.6
+\section{\faGraduationCap\ 教育}
+\datedsubsection{\textbf{浙江大学大学}}{2017年9月 -- 现在}
+  专业：计算机科学与技术，预计毕业日期：2021.6
 
-\section{\faUsers\ 工作经历}
-\datedsubsection{\textbf{前海源伞}, 深圳, 中国}{2018.2 -- 2018.7}
-\role{实习}{编译器前端，IDE 插件开发}
+\section{\faUsers\ 经历}
+\datedsubsection{\textbf{上半格科技}, 杭州, 中国}{2019年8月 -- 现在}
+\role{创业团队客户端开发者}{}
 \begin{itemize}
-  \item 负责 pinpoint 分析器的 IntelliJ/CLion/Eclipse 工具集成，协助开发 SonarQube 插件
-  \item 编写了一个多线程的跨 Java/Kotlin 的源代码索引工具，索引 hadoop 仅需 4 分钟
-  \item 学到了很多 Linux 编程和 clang/llvm 相关的知识
+    \item 创业团队初创成员。负责客户端开发，开发一个面向计价人员的自动化软件。
+    \item 熟悉了C\#语言和WPF框架，客户端开发流程，积累了团队沟通和开发经验。
+\end{itemize}
+\datedsubsection{\textbf{浙江大学SRTP项目}}{2019年9月 -- 现在}
+\role{成员}{}
+\begin{itemize}
+    \item 参与院级学生科研训练项目，开发Maestro，这是一个基于LibTorch的AlphaGoZero算法在五子棋上的实现
+    \item 熟悉蒙特卡洛树搜索，参与蒙特卡洛图搜索的工作，这是一个可以整合“殊途同归”的局面信息的创新点
+    \item 参与算法调试实验，了解人工智能算法调试的过程
 \end{itemize}
 
-\datedsubsection{\textbf{PingCAP}, 远程}{2018.8 -- 现在}
-\role{实习}{TiKV 组}
+\section{\faGithubAlt\ 项目}
+\datedsubsection{\textbf{MyShell}}{}
+MyShell是一个Bash-like的命令处理程序。
 \begin{itemize}
-  \item 改进各种 TiKV 依赖的库，如优化
-    \href{https://docs.rs/crate/grpcio} {grpcio}
-    的内存性能，增加
-    \href{https://docs.rs/crate/procinfo} {procinfo}
-    的功能
+    \item 实现了部分内建指令如bg, fg, pwd, time, exec, dir。其他复杂指令MyShell会理解为程序调用。
+    \item 实现了前后台运行、挂起、并行、管道等特殊功能。支持读取脚本文件并执行。
 \end{itemize}
 
-\section{\faGithubAlt\ 个人项目}
-% \datedsubsection{\textbf{DevKt}}{\url{https://icela.github.io/}}
-% % \role{Kotlin, C\#, Racket, Ruby}{发起者和 Kotlin/C\#/Ruby 版本的主维护者}
-% 一个跨语言、易使用的游戏引擎系列。
-% \begin{itemize}
-%   % \item 易于使用，仅需实现生命周期方法，然后调用非常方便的 API 。
-%   % \item 易于安装，基于各语言内置的 GUI 框架。
-%   \item 基于生命周期方法和工具 API ，并基于各语言内置的 GUI 框架，易于安装。
-%   \item 使用 GitHub 的 issue 和 milestone 功能作为任务和版本管理工具，有完善的改动记录和文档。
-%   \item 提供一个基于 JavaFX 的拖拽式可视化设计器，所见即所得，可以生成各种语言的代码。
-% \end{itemize}
-
-\datedsubsection{\textbf{DevKt}}{\url{https://github.com/ice1000/dev-kt}}
-跨平台轻量级代码编辑器兼 Kotlin IDE。
+\datedsubsection{\textbf{MiniSQL}}{}
+MiniSQL是一个使用c++编写的简单数据库。
 \begin{itemize}
-  \item 内置 Java/Kotlin 的高亮、补全，其他语言可以借助插件（可移植自 JetBrains IDE）做到同样的支持。 \\
-    对 Kotlin 有额外的编译运行支持。
-  \item 架构灵活，编辑器上层逻辑和 UI 框架彻底解藕，易于向其他 UI 框架移植。
-  \item 提供细粒度的高亮颜色和快捷键设置，设置可以热更新。
+  \item 实现SQL输入的解析树建立并估值，实现SQL语句执行模块
+  \item 实现Scanner，使用类似Stream的方式遍历查询结果，实现流水线操作
 \end{itemize}
 
-\datedsubsection{\textbf{Lice 语言}}{\url{https://github.com/lice-lang/lice}}
-% \role{Kotlin, Java}{发起者和主维护者}
-高度可扩展的解释型程序语言，运行在 JVM 上。
+\datedsubsection{\textbf{Mini C Compiler}}{}
+Mini C Compiler是一个使用Lex，Yacc和LLVM的C编译器，按照ANSI C标准编写。
 \begin{itemize}
-  \item 支持 lambda 和 惰性求值 (call by need) / 正则序求值 (call by name) / 严格求值 (call by value)。
-  \item 运行速度约为 Java (Hotspot 8u151) 的二十分之一，提供 Java 交互和脚本引擎支持。
-  \item 提供支持 GHCi 风格的代码补全、彩色输出的命令行交互式解释器和支持基于语义的高亮、补全、重命名、 \\
-    定义跳转、求值替换、快速修复等功能的 JetBrains IDE 插件。
-\end{itemize}
-
-\datedsubsection{\textbf{Julia-IntelliJ}}{\url{https://github.com/ice1000/julia-intellij}}
-JetBrains IDE 的 Julia 插件，支持全线 JetBrains 产品。
-\begin{itemize}
-  \item 支持基于语义的高亮、错误检查、快速修复、定义跳转、参数提示、补全、针对 Unicode 字符的特殊输入。
-  \item 集成 Markdown 插件高亮文档字符串，提供 REPL、SciView（展示 Plot 库的输出） 支持
+  \item 可以熟练运用正则表达式，使用lex实现词法分析。
+  \item 实现将解析得到的AST导出成json语句，这样我们可以利用d3.js可视化AST
+  \item 遍历AST，进行语义分析，并直接生成LLVM IR中间码
 \end{itemize}
 
 % Reference Test
@@ -103,51 +83,24 @@ JetBrains IDE 的 Julia 插件，支持全线 JetBrains 产品。
 
 \section{\faCogs\ 技能}
 \begin{itemize}[parsep=0.25ex]
-  \item \textbf{编程语言}:
-    \textbf{泛语言开发者}（编程不受特定语言限制），
-    且尤其熟悉 Java/Kotlin/Rust/C\#/Agda/Haskell，
-    较为熟悉 Dart/C++/F\#/F$\star$ (均不分先后)
+    \item \textbf{编程语言}:
+        尤其熟悉 C/C\#/Python，
+        熟悉 C++/Java (均不分先后)
 
-  % compiler theories
-  \item \textbf{编译原理}:
-    熟练使用各种 Parser Generator/Combinator，理解 CPS 和 ANF，
-    学习过依赖类型的理论（如 Luo's UTT，Martin-Löf 类型论）
-    以及它们在编程语言中的实现
+    \item \textbf{基于.Net的客户端开发}:
+        有丰富的团队开发经验。
+        非常熟悉WPF框架，也对UWP有一定的了解。
+        熟悉WPF的MVVM模式。
 
-  % language Kotlin
-  \item \textbf{Kotlin/Java}:
-    \textbf{2 年开发经验}，
-    \textbf{4} 个项目被
-    \href{https://kotlin.link/?q=ice} {Awesome Kotlin}
-    收录，熟悉 JNI 编程、Gradle 构建工具，
-    有使用 Kotlin 编译器分析 Java 代码的经验
+    \item \textbf{人工智能}:
+        熟悉神经网络的基本原理，能够使用Numpy实现多层感知机、反向传播算法和梯度下降。
+        能够熟练使用PyPlot等Python库进行数据处理和可视化。
+        熟悉PyTorch框架，使用PyTorch框架实现过垃圾分类、基于TextCNN/对抗学习的RNN/TextGCN的文本分类。
+        熟悉自然语言处理中关系抽取方向的近期科研工作，阅读过若干篇这个方向的论文。
 
-  \item \textbf{形式验证}:
-    掌握依赖类型、（余）代数和 Curry-Howard 同构，
-    目前正在学习同伦类型论和 Cubical 类型论，
-    熟悉 Idris, Agda (\textbf{1 年}使用经验，开发组成员之一)
-    和 F$\star$ 编程语言
-    \subitem 读过代码的项目： Agda, Idris, miniagda, Mini-TT
-
-  \item \textbf{JetBrains MPS}:
-    \textbf{1 年开发经验}，
-    理解\textbf{面向语言编程}的概念和应用
-
-  \item \textbf{IDE 工具开发}:
-    \textbf{2 年开发经验}，
-    熟悉 IntelliJ 平台的基础设施和整体架构（开发了
-      \href{https://plugins.jetbrains.com/plugin/10413-julia}
-           {Julia 插件} 和很多其他插件），
-    也了解 Eclipse/SonarQube 的插件开发
-
-  % platforms I am familiar with  
-  \item \textbf{移动开发}:
-    \textbf{2 年开发经验}，
-    Android (Java, Kotlin), Fuchsia (Flutter)
-
-  \item \textbf{开发工具}:
-    能适应任何编辑器/操作系统，平常在 Ubuntu 下使用 JetBrains IDE、Emacs，
-    有使用 YouTrack、Jira、GitHub、BitBucket、Coding.net、Tower 等团队协作工具的经验
+    \item \textbf{嵌入式}:
+        在FPGA上用Verilog实现过基于简单MIPS架构的多周期CPU和流水线CPU，编写MIPS汇编并操纵外设。
+        熟悉STM32F103开发板和树莓派，熟悉裸机上的程序开发、RTOS上的程序设计以及嵌入式Linux开发。
 \end{itemize}
 
 % \section{\faHeartO\ Honors and Awards}
@@ -156,28 +109,9 @@ JetBrains IDE 的 Julia 插件，支持全线 JetBrains 产品。
 
 \section{\faInfo\ 其他}
 \begin{itemize}[parsep=0.25ex]
-  \item 博客: \url{https://ice1000.org/} 部分翻译为英语
-  \item Literate Agda 博客: \url{https://ice1000.org/lagda/} 使用了我改进过的 Agda 文学编程模式
-  \item Bintray: \url{https://bintray.com/ice1000} 发布了一些好用的 JVM 库
-  \item IntelliJ 插件开发者主页: \url{https://plugins.jetbrains.com/author/10a216dd-c558-4aaf-aa8a-723f431452fb}
-  \item 我写的一些关于形式验证的书： \url{https://github.com/ice1000/Books}
-  \item 开源贡献: \url{https://ice1000.org/opensource-contributions/} \\
-    向 \textit{Microsoft, JetBrains, Ruby, Dropbox, PingCAP, TiKV} 等组织，
-    \textit{agda, imgui, shields.io, intellij-solidity, IntelliJ-EmmyLua,
-      intellij-haskell} 等项目提交过功能性的 pull request
-  \item StackOverflow: \url{https://stackoverflow.com/users/7083401/}
-    3000+ 声誉，同时也在\href{https://stackexchange.com/users/9532102/} {其他 StackExchange 子站}活跃
-  \item 语言: English - 熟练 (托福 100)，汉语 - 母语水平
-  % https://raw.githubusercontent.com/ice1000/resume/master/resume-cn.pdf
-  \item 获取此简历的最新版本: \url{https://tinyurl.com/ya4urea8}
-  \item 在
-    \href{https://www.codewars.com/users/ice1000} {CodeWars}
-    上，以 Haskell 为主，达到 \textbf{1 kyu}，全站排名 \#37
-  \item 很喜欢交朋友
+  \item 个人博客: \url{https://xipotatonium.github.io/}
+  \item 语言: English - 熟练(六级604)，汉语 - 母语水平
+  \item 兴趣广泛，不仅擅长编程，也很喜欢植物学、天文学、欧洲史、唱歌、写信、日记。喜欢猎奇，好奇心强，擅长学习新知识。
 \end{itemize}
 
-%% Reference
-%\newpage
-%\bibliographystyle{IEEETran}
-%\bibliography{mycite}
 \end{document}
