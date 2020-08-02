@@ -23,24 +23,22 @@
 
 \name{邬树辉}
 
+
 \basicInfo{
     \email{xipotatonium@outlook.com} \textperiodcentered\ 
     \phone{(+86) 152-6781-1210} \textperiodcentered\ 
     \github[XiPotatonium]{https://github.com/XiPotatonium}
 }
 
+
 \section{\faGraduationCap\ 教育}
 \datedsubsection{\textbf{浙江大学大学}}{2017年9月 -- 现在}
   专业：计算机科学与技术，预计毕业日期：2021.6
 
+
 \section{\faUsers\ 经历}
-\datedsubsection{\textbf{上半格科技}, 杭州, 中国}{2019年8月 -- 现在}
-\role{创业团队客户端开发者}{}
-\begin{itemize}
-    \item 创业团队初创成员。负责客户端开发，开发一个面向计价人员的自动化软件。
-    \item 熟悉了C\#语言和WPF框架，客户端开发流程，积累了团队沟通和开发经验。
-\end{itemize}
-\datedsubsection{\textbf{浙江大学SRTP项目}}{2019年9月 -- 现在}
+
+\datedsubsection{\textbf{浙江大学SRTP项目}}{2019年6月 -- 现在}
 \role{成员}{}
 \begin{itemize}
     \item 参与院级学生科研训练项目，开发Maestro，这是一个基于LibTorch的AlphaGoZero算法在五子棋上的实现
@@ -48,12 +46,22 @@
     \item 参与算法调试实验，了解人工智能算法调试的过程
 \end{itemize}
 
-\section{\faGithubAlt\ 项目}
-\datedsubsection{\textbf{MyShell}}{}
-MyShell是一个Bash-like的命令处理程序。
+\datedsubsection{\textbf{上半格科技}, 杭州, 中国}{2019年8月 -- 现在}
+\role{创业团队客户端开发者}{}
 \begin{itemize}
-    \item 实现了部分内建指令如bg, fg, pwd, time, exec, dir。其他复杂指令MyShell会理解为程序调用。
-    \item 实现了前后台运行、挂起、并行、管道等特殊功能。支持读取脚本文件并执行。
+    \item 创业团队初创成员。负责客户端开发，开发一个面向计价人员的自动化软件。
+    \item 熟悉了C\#语言和WPF框架，客户端开发流程，积累了团队沟通和开发经验。
+\end{itemize}
+    
+\section{\faGithubAlt\ 项目}
+
+\datedsubsection{\textbf{XiLang}}{}
+XiLang是一个使用C\#实现的类C语言，实现了一个从源代码到字节码的编译前端XiLang和可以执行字节码的栈式虚拟机XiVM
+\begin{itemize}
+  \item 使用正则表达式实现词法分析，使用Top Down的方式实现语法分析生成AST
+  \item 实现将解析得到的AST导出成json
+  \item 生成的文本中间码xir以及二进制字节码xibc
+  \item 实现了栈式虚拟机XiVM，可以执行二进制字节码
 \end{itemize}
 
 \datedsubsection{\textbf{MiniSQL}}{}
@@ -63,44 +71,32 @@ MiniSQL是一个使用c++编写的简单数据库。
   \item 实现Scanner，使用类似Stream的方式遍历查询结果，实现流水线操作
 \end{itemize}
 
-\datedsubsection{\textbf{Mini C Compiler}}{}
-Mini C Compiler是一个使用Lex，Yacc和LLVM的C编译器，按照ANSI C标准编写。
+\datedsubsection{\textbf{MyShell}}{}
+MyShell是一个C语言编写的Bash-like的命令处理程序。
 \begin{itemize}
-  \item 可以熟练运用正则表达式，使用lex实现词法分析。
-  \item 实现将解析得到的AST导出成json语句，这样我们可以利用d3.js可视化AST
-  \item 遍历AST，进行语义分析，并直接生成LLVM IR中间码
+    \item 实现了部分内建指令如bg, fg, pwd, time, exec, dir。其他复杂指令MyShell会理解为程序调用。
+    \item 实现了前后台运行、挂起、并行、管道等特殊功能。支持读取脚本文件并执行。
 \end{itemize}
-
-% Reference Test
-%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
-%An xxx optimized for xxx\cite{verma2015large}
-%\begin{itemize}
-%  \item main contribution
-%\end{itemize}
-
-%% \section{\faHeartO\ 成就}
-%% \datedline{}{Aug. 2017}
 
 \section{\faCogs\ 技能}
 \begin{itemize}[parsep=0.25ex]
     \item \textbf{编程语言}:
-        尤其熟悉 C/C\#/Python，
-        熟悉 C++/Java (均不分先后)
+        熟练使用 C\#/C/Python，
+        掌握 C++/Java
 
     \item \textbf{基于.Net的客户端开发}:
         有丰富的团队开发经验。
-        非常熟悉WPF框架，也对UWP有一定的了解。
-        熟悉WPF的MVVM模式。
+        非常熟悉WPF框架，对UWP也有一定的了解。
 
     \item \textbf{人工智能}:
-        熟悉神经网络的基本原理，能够使用Numpy实现多层感知机、反向传播算法和梯度下降。
-        能够熟练使用PyPlot等Python库进行数据处理和可视化。
+        熟悉神经网络的基本原理，能够使用Numpy实现多层感知机。
+        能够熟练使用PyPlot等Python库对训练日志进行可视化。
         熟悉PyTorch框架，使用PyTorch框架实现过垃圾分类、基于TextCNN/对抗学习的RNN/TextGCN的文本分类。
-        熟悉自然语言处理中关系抽取方向的近期科研工作，阅读过若干篇这个方向的论文。
+        了解自然语言处理中关系抽取特别是上下位关系抽取的方法，阅读过若干论文。
 
     \item \textbf{嵌入式}:
         在FPGA上用Verilog实现过基于简单MIPS架构的多周期CPU和流水线CPU，编写MIPS汇编并操纵外设。
-        熟悉STM32F103开发板和树莓派，熟悉裸机上的程序开发、RTOS上的程序设计以及嵌入式Linux开发。
+        熟悉STM32F103开发板和树莓派，熟悉裸机和RTOS上的编程以及嵌入式Linux开发。
 \end{itemize}
 
 % \section{\faHeartO\ Honors and Awards}
@@ -110,7 +106,7 @@ Mini C Compiler是一个使用Lex，Yacc和LLVM的C编译器，按照ANSI C标�
 \section{\faInfo\ 其他}
 \begin{itemize}[parsep=0.25ex]
   \item 个人博客: \url{https://xipotatonium.github.io/}
-  \item 语言: English - 熟练(六级604)，汉语 - 母语水平
+  \item 语言: English - 熟练(六级604)，可以流畅阅读英文文献
   \item 兴趣广泛，不仅擅长编程，也很喜欢植物学、天文学、欧洲史、唱歌、写信、日记。喜欢猎奇，好奇心强，擅长学习新知识。
 \end{itemize}
 
