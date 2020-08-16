@@ -9,14 +9,21 @@ This is my resume, based on [this template](https://github.com/ice1000/resume).
 
 ## Build
 
-To build this resume, install texlive-full first.<br/>
-Then:
+To build this resume, install texlive-full first
+
+### Windows
+
+```PowerShell
+PS ./Make.ps1
+```
+
+### Ubuntu
 
 ```bash
 $ make zh
 $ make en
 ```
 
-## Download/下载
+## Download
 
-详见Release
+见Release
