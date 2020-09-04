@@ -35,7 +35,7 @@
 \datedsubsection{\textbf{浙江大学大学}，本科}{2017年9月 -- 现在}
   专业：计算机科学与技术，预计毕业日期：2021.6
   
-  GPA 3.90/4.00
+  GPA 3.90/4.00, 专业排名 31/154
 
 
 \section{\faUsers\ 经历}
@@ -58,18 +58,20 @@
 \section{\faGithubAlt\ 项目}
 
 \datedsubsection{\textbf{XiLang}, C\#}{}
-XiLang是一个类C\#的简单面向对象语言。
+XiLang是一个类C\#的简单编程语言。
 \begin{itemize}
   \item 使用正则表达式实现词法分析，使用Top Down的方式实现语法分析生成AST
-  \item 实现将解析得到的AST导出成json
-  \item 生成的文本中间码xir以及二进制字节码xibc。实现了栈式虚拟机XiVM，可以执行二进制字节码
+  \item 设计API，生成的文本中间码xir以及二进制字节码xibc。
+  \item 实现了栈式虚拟机XiVM，可以执行二进制字节码
+  \item 实现了一个简易系统库，提供控制台IO和string类
 \end{itemize}
 
 \datedsubsection{\textbf{MiniSQL}, C++}{}
 MiniSQL是一个简单数据库。
 \begin{itemize}
-  \item 实现SQL输入的解析树建立并估值，实现SQL语句执行模块
-  \item 实现Scanner，使用类似Stream的方式遍历查询结果，实现流水线操作
+  \item 实现SQL语句执行模块，对SQL输入建立解析树并估值
+  \item 实现Scanner，使用类似流的方式遍历查询结果
+  \item 使用RAII和LRU的方式实现数据块的操作和管理。
 \end{itemize}
 
 \datedsubsection{\textbf{MyShell}, C}{}
@@ -82,16 +84,15 @@ MyShell是一个C语言编写的Bash-like的命令处理程序。
 \section{\faCogs\ 技能}
 \begin{itemize}[parsep=0.25ex]
     \item \textbf{编程语言}:
-        熟练使用 C\#/C/Python，
-        掌握 C++/Java
+        熟悉 C\#/C/C++，
+        掌握 Java/Python
 
     \item \textbf{基于.Net的客户端开发}:
         有丰富的团队开发经验。
         非常熟悉WPF框架，对UWP也有一定的了解。
 
     \item \textbf{人工智能}:
-        熟悉神经网络的基本原理，能够使用Numpy实现多层感知机。
-        能够熟练使用PyPlot等Python库对训练日志进行可视化。
+        熟悉神经网络的基本原理，能够使用PyPlot等Python库对训练日志进行可视化。
         熟悉PyTorch框架，使用PyTorch框架实现过垃圾分类、基于TextCNN/对抗学习的RNN/TextGCN的文本分类。
         了解自然语言处理中关系抽取特别是上下位关系抽取的方法，阅读过若干论文。
 
@@ -109,7 +110,7 @@ MyShell是一个C语言编写的Bash-like的命令处理程序。
   \item 个人博客: \url{https://xipotatonium.github.io/}
   \item 语言: English - 熟练(六级604)，可以流畅阅读英文文献
   \item PAT甲级（2020年春）：分数96/100，排名100/2280
-  \item 兴趣广泛，不仅擅长编程，也很喜欢植物学、天文学、欧洲史、唱歌、写信、日记。喜欢猎奇，好奇心强，擅长学习新知识。
+  \item 兴趣广泛，不仅擅长编程，也很喜欢博物学、欧洲史、唱歌、写信、日记。好奇心强，乐于学习新知识
 \end{itemize}
 
 \end{document}
